@@ -2,15 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>husdyr.dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terminator-Style Portfolio</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Det går bra JJ</h1>
-    </header>
+  <div id="main-container">
+    <div id="left-section">
+      <div class="terminator-window" id="home">
+        <div class="terminator-titlebar">
+          <span class="titlebar-left">wattson@adm: ~ - 30x8</span>
+          <span class="titlebar-right">Home</span>
+        </div>
+        <div class="terminator-content">
+          <h2>home.md</h2>
+          <p>
+            All my developer stuff, not a lot here but there is (probably) more to come!
+          </p>
+        </div>
+      </div>
+
+      <div class="terminator-window" id="experience">
+        <div class="terminator-titlebar">
+          <span class="titlebar-left">wattson@adm: ~ - 30x8</span>
+          <span class="titlebar-right">Experience</span>
+        </div>
+        <div class="terminator-content">
+          <h2>Experience</h2>
+          <ul id="experience-list">
+            <li data-exp="exp1">
+              Apprentice Exorcist
+              <br>
+              <span class="company-line">@ mnemonic AS</span>
+            </li>
+            <li data-exp="exp2">
+              Technician's Glare User
+              <br>
+              <span class="company-line">@ Elkjøp</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="terminator-window" id="projects">
+        <div class="terminator-titlebar">
+          <span class="titlebar-left">wattson@adm: ~ - 30x8</span>
+          <span class="titlebar-right">Projects</span>
+        </div>
+        <div class="terminator-content">
+          <h2>Projects</h2>
+          <ul id="projects-list">
+            <li data-proj="proj1">husdyr.dev</li>
+            <li data-proj="proj2">Curlinator</li>
+            <li data-proj="proj3">[REDACTED]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="terminator-window" id="skills">
+        <div class="terminator-titlebar">
+          <span class="titlebar-left">wattson@adm: ~ - 30x8</span>
+          <span class="titlebar-right">Skills</span>
+        </div>
+        <div class="terminator-content">
+          <h2>Skills - Tools</h2>
+          <ul id="skills-list">
+            <li data-skill="go">Go</li>
+            <li data-skill="hmcssjs">HTML/Js/Css</li>
+            <li data-skill="python">Python</li>
+            <li data-skill="svelte">Svelte</li>
+            <li data-skill="postgres">PostgreSQL</li>
+            <li data-skill="bash">Bash</li>
+            <li data-skill="git">Git</li>
+            <li data-skill="linux">Linux</li>
+            <li data-skill="dota2">DotA 2</li>
+            <li data-skill="chess">Chess</li>
+            <li data-skill="books">Reading</li>
 
 
 
+          </ul>
+        </div>
+      </div>
+
+      <div class="terminator-window" id="art-window">
+        <div class="terminator-titlebar">
+          <span class="titlebar-left">wattson@adm: ~ - 30x8</span>
+          <span class="titlebar-right">Art</span>
+        </div>
+        <div class="terminator-content art-content">
+          <pre>
+                   __ _._.,._.__
+                .o8888888888888888P'
+              .d88888888888888888K
+    ,8            888888888888888888888boo._
+    :88b           888888888888888888888888888b.
+    `Y8b          88888888888888888888888888888b.
+    `Yb.       d8888888888888888888888888888888b
+    `Yb.___.88888888888888888888888888888888888b
+      `Y888888888888888888888888888888CG88888P"'
+        `88888888888888888888888888888MM88P"'
+"Y888K    "Y8P""Y888888888888888888888888oo._""""
+88888b    8    8888`Y88888888888888888888888oo.
+8"Y8888b  8    8888  ,8888888888888888888888888o,
+8  "Y8888b8    8888""Y8`Y8888888888888888888888b.
+8    "Y8888    8888   Y  `Y888888888888888888888
+8      "Y88    8888     .d `Y88888888888888888888
+.d8b.      "8  .d8888b..d88P   `Y88888888888888888888
+                    `Y88888888888888888b.
+     "Y888P""Y8b. "Y888888888888888888888
+       888    888   Y888`Y888888888888888
+       888   d88P    Y88b `Y8888888888888
+       888"Y88K"      Y88b dPY8888888888P
+       888  Y88b       Y88dP  `Y88888888b
+       888   Y88b       Y8P     `Y8888888
+     .d888b.  Y88b.      Y        `Y88888
+                                    `Y88K
+                                      `Y8
+                                        '
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <div id="right-section">
+      <div class="terminator-window" id="main-content">
+        <div class="terminator-titlebar">
+          <span class="titlebar-left">wattson@adm: ~ - 80x24</span>
+          <span class="titlebar-right">Main Content</span>
+        </div>
+        <div class="terminator-content" id="main-content-area">
+          <h1>Main Content Area</h1>
+          <p>
+            Click on an item in the left panel or use arrow keys to see details here.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+</html>

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    background: #000; 
+    font-family: "Fira Mono", monospace;
+    color: #ccc;
+    overflow: hidden; 
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0.45rem;
+    background-color: #000;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+  }
+  
+  #left-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;         
+    height: 100vh;    
+    border-bottom: 1px solid #444;  
+    border-right: 1px solid #444;   
+    overflow-y: auto;   
+    background: #000;
+  }
+  
+  #right-section {
+    margin-left: 25%; 
+    height: 100vh; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .terminator-window {
+    display: flex;
+    flex-direction: column;
+    border: none; 
+    background: #000;
+  }
+  
+  .terminator-titlebar {
+    background: #8b0000;
+    color: #fff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+    border-bottom: 1px solid #555;
+  }
+  .titlebar-left {
+    font-weight: bold;
+  }
+  .titlebar-right {
+    opacity: 0.9;
+  }
+  
+  .terminator-content {
+    flex: 1;
+    padding: 0.5rem;
+    overflow-y: auto;
+    background: #000;
+    color: #ccc;
+  }
+  
+  #main-content.terminator-window {
+    border: none;
+  }
+  
+  #left-section .terminator-content > * {
+    max-width: 500px;  
+    word-wrap: break-word;
+  }
+  
+  h1, h2 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  p, li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .terminator-content ul li:hover {
+    background-color: #222;
+  }
+  .selected-frame {
+    border: 2px solid #ffbd2e;
+  }
+  .selected-item {
+    background-color: #333;
+    border: 1px solid #ffbd2e;
+    padding: 0.2rem;
+  }
+  
+  .at-symbol {
+    font-size: 0.8em;    
+    opacity: 0.7;        
+    margin: 0 0.2em;    
+  }
+  
